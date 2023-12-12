@@ -2,11 +2,17 @@
 
 A [Hyper](https://hyper.is) plugin to sync the active theme with [VSCode](https://code.visualstudio.com/).
 
-## Install
+## Usage
 
-- `cd ~/.hyper_plugins/local`
-- `git clone https://github.com/arthur-fontaine/hyper-vscode-synced-theme.git`
-- Add `hyper-vscode-synced-theme` to `localPlugins` in `~/.hyper.js`
+- Install the plugin
+  ```sh
+  cd ~
+  HYPER_VSCODE_SYNCED_THEME_PATH=".hyper_plugins/local/hyper-vscode-synced-theme"
+  git clone https://github.com/arthur-fontaine/hyper-vscode-synced-theme.git $HYPER_VSCODE_SYNCED_THEME_PATH
+  cd $HYPER_VSCODE_SYNCED_THEME_PATH
+  npm i
+  ```
+- Activate it by adding `"hyper-vscode-synced-theme"` to `localPlugins` in `~/.hyper.js`
 - Restart Hyper
 
 ## Features
