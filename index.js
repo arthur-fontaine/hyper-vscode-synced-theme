@@ -61,6 +61,8 @@ function getVscodeTheme(systemIsDark, forceRefresh = false) {
     'apc.font.family': uiFontFamily,
     'terminal.integrated.fontFamily': terminalFontFamily,
     'editor.fontFamily': editorFontFamily,
+    'terminal.integrated.fontSize': editorFontSize,
+    'terminal.integrated.lineHeight': editorLineHeight,
   } = vscodeSettingsJSON;
 
   const themeName = (systemIsDark ? preferredDarkColorTheme : preferredLightColorTheme) || colorTheme;
@@ -89,6 +91,8 @@ function getVscodeTheme(systemIsDark, forceRefresh = false) {
     ...vscodeTheme,
     uiFontFamily,
     fontFamily: terminalFontFamily || editorFontFamily,
+    fontSize: editorFontSize,
+    lineHeight: editorLineHeight,
   };
 }
 
@@ -167,6 +171,12 @@ function getTheme(systemIsDark) {
     },
     ...vscodeTheme.fontFamily && {
       fontFamily: vscodeTheme.fontFamily,
+    },
+    ...vscodeTheme.fontSize && {
+      fontSize: vscodeTheme.fontSize,
+    },
+    ...vscodeTheme.lineHeight && {
+      lineHeight: vscodeTheme.lineHeight,
     },
   };
 }

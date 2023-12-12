@@ -14,5 +14,5 @@ A [Hyper](https://hyper.is) plugin to sync the active theme with [VSCode](https:
 - Syncs the active color theme from VSCode to Hyper
 - Supports for `workbench.preferredDarkColorTheme` and `workbench.preferredLightColorTheme` parameters in VSCode settings
 - Automatically changes the Hyper theme according to the system theme (dark or light)
-- Syncs the active editor font from VSCode to Hyper
+- Syncs the active editor font (family, size, line height) from VSCode to Hyper
 - Supports for `apc.font.family` parameter in VSCode settings (this will set the ui font in Hyper)
